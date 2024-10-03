@@ -3,7 +3,7 @@ pipeline {
     agent any 
     // global env variables
     environment {
-        EMAIL_RECIPIENTS = 'mahmoud.romeh@test.com'
+        EMAIL_RECIPIENTS = 'shahrooq123@gmail.com'
     }
     stages {
 
@@ -15,7 +15,7 @@ pipeline {
                     // ** NOTE: This 'M3' Maven tool must be configured
                     // **       in the global configuration.
                     echo 'Pulling...' + env.BRANCH_NAME
-                    def mvnHome = tool 'Maven 3.5.2'
+                    def mvnHome = tool 'Maven 3.9.9
                     if (isUnix()) {
                         def targetVersion = getDevVersion()
                         print 'target build version...'
